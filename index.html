@@ -35,6 +35,24 @@
       <section id="join" class="box">
         <h2>Join</h2>
         <p>Interested in joining? Fill out the form below.</p>
+
+        <!--Signup Form-->
+        <form>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" placeholder="John Q. Public" />
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" placeholder="you@example.com" required />
+          <label for="session">Which meeting day works best for you?</label>
+          <select id="session" name="session">
+              <option value="Choose your preferred session"></option>
+              <option value="first">First Friday</option>
+              <option value="last">Last Friday</option>
+              <option value="either">Either is fine. No preference </option>
+          </select>
+          <label for="message">Anything you would like to share?</form>label>
+          <textarea id="message" name="message" rows="5"></textarea></textarea>
+          <button type="submit">Sign Up</button>
+        </form>
       </section>
     </main>
     <!--Footer (Day 1)-->
