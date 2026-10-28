@@ -22,3 +22,14 @@ function sayGoodbye() {
 // Call the function to make it go
 sayGoodbye();
 sayGoodbye();
+
+// HTML Elements(Day 2)
+let nextButton = document.querySelector("#next-btn");
+let nextMeeting = document.querySelector("#next-meeting");
+
+//Declare a show message function (Day 2 )
+function showNextMeeting() {
+  nextMeeting.textContent = "Our next meeting is Friday, November at 7pm";
+}
+
+nextButton;
