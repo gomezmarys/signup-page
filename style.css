@@ -40,3 +40,13 @@ button {
   background-color: #fcb69f;
   color: aqua;
 }
+/* Pseudo- class styling*/
+input: focus;
+select: focus;
+textarea:focus {
+  outline: 3px solid orange;
+  outline-offset: 2px;
+}
+input:user-invalid {
+  border: 3px solid red;
+}
