@@ -32,4 +32,4 @@ function showNextMeeting() {
   nextMeeting.textContent = "Our next meeting is Friday, November at 7pm";
 }
 
-nextButton;
+nextButton.addEventListener("click", showNextMeeting);

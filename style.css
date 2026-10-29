@@ -4,7 +4,6 @@ html {
 body {
   font-family: Arial, Helvetica, sans-serif;
   margin: 0 24px;
-  background-color: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
 }
 h1 {
   color: pink;
@@ -41,8 +40,8 @@ button {
   color: aqua;
 }
 /* Pseudo- class styling*/
-input: focus;
-select: focus;
+input:focus,
+select:focus,
 textarea:focus {
   outline: 3px solid orange;
   outline-offset: 2px;
