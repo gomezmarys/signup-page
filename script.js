@@ -5,7 +5,7 @@ console.log("Welcome to " + clubName + "! We are excited to have you join us!");
 
 let meetingDay = "Saturday";
 console.log(
-  "Our meetings are held on" + meetingDay + ". We hope to see you there!",
+  "Our meetings are held on " + meetingDay + ". We hope to see you there!",
 );
 
 // This is a function that prints "Hello, Thank you for visiting!" to the console
@@ -34,3 +34,11 @@ function showNextMeeting() {
 }
 
 nextButton.addEventListener("click", showNextMeeting);
+
+let themeButton = document.querySelector("#theme-btn");
+
+function toggleTheme() {
+  document.body.classList.toggle("dark");
+}
+
+themeButton.addEventListener("click", toggleTheme);

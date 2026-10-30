@@ -1,28 +1,38 @@
+/* padding and borders (Day 2)*/
+* {
+  box-sizing: border-box;
+}
+/* smoother glide, tho its hard to tell w/o much content (Day 1)*/
 html {
   scroll-behavior: smooth;
 }
+
+/* Var aka variables (Day 4)*/
+
 body {
   font-family: Arial, sans-serif;
   margin: 0 24px;
-  background-color: #fbf9f4;
+  /* background-color: #fbf9f4;*/
+  background-color: var(--page-bg);
+  color: var(--text);
 }
 h1 {
-  color: #1f3a5f;
+  color: var(--brand); /* #1f3a5f;*/
 }
 h2 {
   color: #c8313b;
 }
 .box {
   margin: 40px 0;
-  border: 3px dashed #1f3a5f;
+  border: 3px dashed var(--brand); /* #1f3a5f;*/
   padding: 60px;
-  background-color: rgba (31, 58, 95, 0.08);
+  background-color: rgba(31, 58, 95, 0.08);
   border-radius: 10px;
 }
-/* Form Styling */
+/* From Styling */
 label {
   display: block;
-  margin-top: 16px;
+  /* margin-top: 16px;*/
   font-weight: bold;
 }
 input,
@@ -30,26 +40,29 @@ select,
 textarea {
   width: 100%;
   max-width: 30rem;
-  padding: 8px;
+  padding: 9px;
   font: inherit;
 }
 
 /* margin-top: 16px; removed (Day 3)*/
 button {
   display: block;
-  padding: 10px;
+  padding: 10px 20px;
+  font: inherit;
 }
-/* Pseudo- class styling*/
+/* Pseudo- class styling to show what box you're in*/
 input:focus,
 select:focus,
 textarea:focus {
-  outline: 3px solid #1f3a5f;
+  outline: 3px solid var(--brand); /*#1f3a5f;*/
   outline-offset: 2px;
 }
+/* wrong answer styling (Day 2)*/
 input:user-invalid {
-  border: 3px solid red;
+  border: 3px solid crimson;
 }
 
+/* (Day 3) Card container so they line up in a row and then each card starts a 200px grow/shrink situation*/
 .cards {
   display: flex;
   gap: 16px;
@@ -57,13 +70,26 @@ input:user-invalid {
 }
 .card {
   flex: 1 1 200px;
-  border: 2px solid #1f3a5f;
+  border: 2px solid var(--brand); /* #1f3a5f;*/
   padding: 16px;
 }
+/* Field styling (Day 3)*/
 
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 30rem;
+}
+field {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+/* Hero Banner (Day 4)*/
 .hero {
-  background-color: rgba (31, 58, 95, 0.85);
-  color: #fbf9f4;
+  background-color: rgba(31, 58, 95, 0.85);
+  color: #0f1a2b;
   padding: 64px 24px;
   text-align: center;
 }
@@ -71,9 +97,9 @@ input:user-invalid {
 .hero h2 {
   color: #fbf9f4;
 }
-
+/* cta aka for call to action so the links a button( 4)*/
 .cta {
-  display: inline-bloack;
+  display: inline-block;
   background-color: #d4af37;
   color: black;
   padding: 12px 24px;
@@ -82,8 +108,27 @@ input:user-invalid {
   font-weight: bolder;
 }
 
+/* Bigger hero headline */
 @media (min-width: 700px) {
   .hero h2 {
     font-size: 3rem;
   }
+}
+
+/*Dark mode (Day 4)*/
+
+:root {
+  --page-bg: #fbf9f4;
+  --text: #1b1b1b;
+  --brand: #1f3a5f;
+}
+
+body.dark {
+  --page-bg: #0f1a2b;
+  --text: #f3efe6;
+  --brand: #9cc0ec;
+}
+
+body.dark nav a {
+  color: lightblue;
 }
