@@ -104,7 +104,7 @@ field {
 .hero p {
   color: #c8313b;
 }
-/* cta aka for call to action so the links a button( 4)*/
+/* cta aka for call to action so the links a button( 4) color change hover /focus */
 .cta {
   display: inline-block;
   background-color: #d4af37;
@@ -113,6 +113,15 @@ field {
   border-radius: 8px;
   text-decoration: none;
   font-weight: bolder;
+}
+.cta {
+  transition: background-color 0.3s;
+}
+
+.cta:hover,
+.cta.cta:focus-visibible {
+  background-color: #e8c75a;
+  outline: 3px; solid black;
 }
 
 /* Bigger hero headline */
@@ -162,6 +171,6 @@ nav a {
 }
 
 /* section titles dont go under the sticky nav (Day 4)*/
-section {
+ssection {
   scroll-margin-top: 72px;
 }
