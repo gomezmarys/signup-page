@@ -18,6 +18,7 @@ body {
 }
 h1 {
   color: var(--brand); /* #1f3a5f;*/
+  font-size: 20px;
 }
 h2 {
   color: #c8313b;
@@ -62,12 +63,13 @@ input:user-invalid {
   border: 3px solid crimson;
 }
 
-/* (Day 3) Card container so they line up in a row and then each card starts a 200px grow/shrink situation*/
+/* (Day 3) Card container*/
 .cards {
   display: flex;
   gap: 16px;
   flex-wrap: wrap;
 }
+/* Makes the cards line up in a row and then each card starts a 200px grow/shrink situation*/
 .card {
   flex: 1 1 200px;
   border: 2px solid var(--brand); /* #1f3a5f;*/
