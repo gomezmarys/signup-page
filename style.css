@@ -49,3 +49,41 @@ textarea:focus {
 input:user-invalid {
   border: 3px solid red;
 }
+
+.cards {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+.card {
+  flex: 1 1 200px;
+  border: 2px solid #1f3a5f;
+  padding: 16px;
+}
+
+.hero {
+  background-color: rgba (31, 58, 95, 0.85);
+  color: #fbf9f4;
+  padding: 64px 24px;
+  text-align: center;
+}
+
+.hero h2 {
+  color: #fbf9f4;
+}
+
+.cta {
+  display: inline-bloack;
+  background-color: #d4af37;
+  color: black;
+  padding: 12px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bolder;
+}
+
+@media (min-width: 700px) {
+  .hero h2 {
+    font-size: 3rem;
+  }
+}
