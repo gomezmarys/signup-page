@@ -72,8 +72,9 @@ input:user-invalid {
 /* Makes the cards line up in a row and then each card starts a 200px grow/shrink situation*/
 .card {
   flex: 1 1 200px;
-  border: 2px solid var(--brand); /* #1f3a5f;*/
+  border: 3px solid var(--brand); /* #1f3a5f;*/
   padding: 16px;
+  border-radius: 10px;
 }
 /* Field styling (Day 3)*/
 
@@ -98,6 +99,10 @@ field {
 
 .hero h2 {
   color: #fbf9f4;
+}
+
+.hero p {
+  color: #c8313b;
 }
 /* cta aka for call to action so the links a button( 4)*/
 .cta {
