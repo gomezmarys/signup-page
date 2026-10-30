@@ -6,7 +6,6 @@
     <title>Bills &amp Brunch</title>
     <link rel="stylesheet" href="style.css" />
   </head>
-  <script src="script.js"></script>
   <body>
     <!--Header (Day 1)-->
     <header>
@@ -27,7 +26,7 @@
     <main>
       <!-- Her banner (Day 4)-->
       <section class="hero">
-        <h2>Read the bill. Then brunch</h2>
+        <h2>We read the bill. Then we brunch</h2>
         <P>We're nonpartisan, judgement free and fully caffeinated.</P>
         <a href="#join" class="cta">Join us!</a>
       </section>
@@ -39,46 +38,77 @@
       </section>
 
       <!-- Flexbox Cards (Day 3)-->
-       <section id= "reasons">
+    <section id= "reasons">
       <h2>Three reasons to join</h2>
       <div class="cards">
-        <div class=""
-
+        <div class="card">
+          <h3>Plain English</h3>
+          <p>We break each bill down so anyone can follow along.</p>
+        </div>
+        <div class="card">
+          <h3>Every voice counts</h3>
+          <p>We listen first and disagree kindly</p>
       </div>
+        <div class="card">
+          <h3>Good Eats</h3>
+          <p>Policy is easier to digest with waffles and pancakes</p>
+      </div>
+      </div>
+    </section>
 
-      </section>
       <section id="schedule" class="box">
         <h2>Schedule</h2>
-        <p>We gather on the second Friday of every month at 7pm in a corner booth at a 24 hour diner,where the menu is fourteen pages long  </p>
+        <p>We gather Saturday at 11am. The location rotates between DD and D or local cafes. </p>
+        <!-- Button w/ empty bit that gets filled in -->
         <button id="next-btn"> When is the next meeting?</button>
       <p id= "next-meeting"></p>
       </section>
+
       <section id="join" class="box">
         <h2>Join</h2>
-        <p>Interested in joining? Fill out the form below.</p>
+        <p>Every background and belief is welcome here. Interested in joining? Fill out the form below.</p>
 
         <!--Signup Form-->
-        <form>
+      <form>
+
+<!--Each label and its input sits in a div for Flexbox (Day 3)-->
+      <div class="field">
           <label for="name">Name:</label>
           <input type="text" id="name" name="name" placeholder="John Q. Public" required/>
+      </div>
+      
+      <div class="field">
           <label for="email">Email:</label>
           <input type="email" id="email" name="email" placeholder="you@example.com" required />
-          <label for="session">Which meeting day works best for you?</label>
+      </div>
+
+        <!--Dropdown with options (Day 2)-->
+        <div class="field">
+          <label for="session">Which Saturday out of the month works best for you?</label>
           <select id="session" name="session">
-              <option value="Choose your preferred session"></option>
-              <option value="first">First Friday</option>
-              <option value="last">Last Friday</option>
+              <option value="Choose your preferred Saturday"></option>
+              <option value="first">First Saturday</option>
+              <option value="last">Last Saturday</option>
               <option value="either">Either is fine. No preference </option>
           </select>
+        </div>
+
+        <div class="field">
           <label for="message">Anything you would like to share?</label>
-          <textarea id="message" name="message" rows="5"></textarea>
+          <textarea id="message" name="message" rows="4" placeholder="The topics we should read first should be housing or transit OR you should know I have dietary restrictions/allergies"></textarea>
+         </div>
+
+        
           <button type="submit">Sign Up</button>
         </form>
       </section>
     </main>
+
     <!--Footer (Day 1)-->
     <footer>
       <p>&copy; 2026 Marys Gomez @ CodeXAcademy</p>
     </footer>
+    <!--Connects JS-->
+    <script src="script.js"></script>
   </body>
 </html>

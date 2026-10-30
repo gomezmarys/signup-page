@@ -9,13 +9,13 @@ h1 {
   color: pink;
 }
 h2 {
-  color: lightpink;
+  color: #c8313b;
 }
 .box {
   margin: 40px 0;
   border: 3px dotted pink;
   padding: 60px;
-  background-color: gainsboro;
+  background-color: rgba (31, 58, 95, 0.08);
   border-radius: 10px;
 }
 /* Form Styling */
@@ -32,8 +32,9 @@ textarea {
   padding: 8px;
   font: inherit;
 }
+
+/* margin-top: 16px; removed (Day 3)*/
 button {
-  margin-top: 16px;
   display: block;
   padding: 10px;
   background-color: #fcb69f;
