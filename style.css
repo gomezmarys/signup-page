@@ -30,7 +30,7 @@ body {
   color: var(--text);
 }
 h1 {
-  color: var(--brand); /* #1f3a5f;*/
+  color: pink;
 }
 h2 {
   color: #c8313b;
